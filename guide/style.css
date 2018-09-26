@@ -1,0 +1,16 @@
+@font-face {
+    font-family: Graphik;
+    font-weight: normal;
+    src: url(fonts/Graphik-Regular-Web.woff2);
+}
+@font-face {
+    font-family: Graphik;
+    font-weight: bold;
+    src: url(fonts/Graphik-Medium-Web.woff2);
+}
+
+.ffont,
+.title.ffont,
+h1, h2, h3, h4 {
+	font-family: Graphik,-apple-system-font,"Sukhumvit Set","HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
