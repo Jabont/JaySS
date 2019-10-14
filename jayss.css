@@ -5,7 +5,7 @@
 .
 .
 .
-Last Update 26-Dec-2017
+Last Update 22-Aug-2019
 JaySS Standard Size (JSZ): 
 
 px	= 1px | .0625rem
@@ -78,7 +78,6 @@ a,
 a:link,
 a:visited{
 	color: #000;
-	transition: all .2s;
 	text-decoration:none;
 }
 a:hover{
@@ -1183,6 +1182,15 @@ tab[active="0"]{
 tab[active="1"]{
 	box-shadow: 0px 3px 6px rgba(0,0,0,0.05) inset;
 }
+/*-- Mobile Version --*/
+@media (max-width: 768px) {
+	tab[active="1"]{
+		box-shadow: 0px -10rem 0px rgba(0,0,0,0.2) inset,0px -3px 6px rgba(0,0,0,0.05) inset;
+	}
+	tab[active="0"]{
+		box-shadow: 0px 3px 6px rgba(0,0,0,0.05) inset;
+	}
+}
 
 panel[active="0"]{
 	/*display: none;*/
@@ -1372,12 +1380,17 @@ Helper | Typo | Display
 Helper | Radius
 -------------------------------------------------------------------------*/
 .round{
-	border-radius: 5px !important;
+	/*border-radius: 5px !important;*/
+	border-radius: 5px;
 	overflow: hidden;
 }
 .circle{
-	border-radius: 10000px !important;
+	/*border-radius: 10000px !important;*/
+	border-radius: 10000px;
 	overflow: hidden;
+}
+.no-round{
+	border-radius: 0px;
 }
 
 /*-------------------------------------------------------------------------
@@ -1486,9 +1499,6 @@ figure{
 	font-size: 0;
 }
 
-figure.cover{
-
-}
 figure.cover img{
 	object-fit: cover;
 	height: 0;
@@ -1562,7 +1572,8 @@ figure.cover img{
 	padding: .75em 1.5em;
 	display: inline-block;
 	border-radius: 5px;
-	margin: 1em 0;
+	color: pointer;
+	/*margin: 1em 0;*/
 	border:0;
 	/*font-size: 1rem;*/
 }
@@ -2644,6 +2655,7 @@ Responsive | Hide and Show
 		display: inline-block;
 		margin-top: .25em;
 		width: 1em;
+		line-height: .5;
 		cursor: pointer;
 		opacity: .7;
 		transition: all .3s;
@@ -2653,14 +2665,20 @@ Responsive | Hide and Show
 	slide-nav span[active="1"]{
 		opacity: 1;
 	}
+	slide-wrap{
+		display: block;
+		overflow: hidden;
+		position: relative;
+	}
 
 	wing {
-		transition: all .5s;
+		transition: opacity .5s;
 		background: linear-gradient(to left,transparent,transparent,black);
 		opacity: 0;
 		display: block;
-		z-index: 100;
+		z-index: 10;
 		width: 50%;
+		height: 100%;
 		position: absolute;
 		top: 0;
 		cursor: w-resize;
@@ -2673,4 +2691,25 @@ Responsive | Hide and Show
 	}
 	wing:hover{
 		opacity: .3;
+	}
+
+
+	/*YOUTUBE*/
+
+	youtube{
+		position: relative;
+		width: 100%;
+		display: block;
+		height: 0;
+		padding-top: 56.25%;
+		background: #000;
+	}
+
+	youtube iframe{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100% !important;
+		height: 100% !important;
+		display: block;
 	}
