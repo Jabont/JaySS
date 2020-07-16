@@ -38,12 +38,19 @@ xxl	= 64px | 4.00rem
 
 :root{
 	--ci1:#000;
-	--ci2:#444;
-	--cl-link:#000;
-	--cl-link-hover:#444;
+	--ci2:#666;
+	--ci3:#888;
+	--link:var(--ci1);
+	--link-hover:var(--ci2);
+	--btn-bg:var(--ci1);
+	--btn-bg-hover:var(--ci2);
+	--nav-link:var(--ci1);
+	--nav-hover:var(--ci2);
 	--bg-color:#fbfbfb;
 	--text-color:#333;
 	--box-shadow:0 0 0 1px rgba(0,0,0,.04), 0 2px 4px 0 rgba(0,0,0,.08);
+	--txt-font:-apple-system, BlinkMacSystemFont, sans-serif;
+	--pmr-font:"Sukhumvit Set",-apple-system, BlinkMacSystemFont,"HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /*.
@@ -55,7 +62,7 @@ xxl	= 64px | 4.00rem
 .*/
 
 html,body{
-	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	font-family: var(--txt-font);
 	-webkit-font-smoothing: antialiased;
 	box-sizing: border-box;
 	background-color: var(--bg-color);
@@ -64,7 +71,7 @@ html,body{
 	width: 100%;
 }
 body, button, input, select, optgroup, textarea{
-	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	font-family: var(--txt-font);
 }
 h1,h2,h3,h4,h5,h6{
 	margin: 0rem;
@@ -88,11 +95,11 @@ img,video{
 	
 }
 a{
-	color: var(--cl-link);
+	color: var(--link);
 	text-decoration:none;
 }
 a:hover{
-	color: var(--cl-link-hover);
+	color: var(--link-hover);
 }
 section{
 	overflow: hidden;
@@ -252,10 +259,12 @@ Heading | Title
 .sans{
 	font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
 }
-.ffont,
+.ffont{
+	font-family: var(--pmr-font) !important;
+}
 .title.ffont,
 h1, h2, h3, h4 {
-	font-family: "pmr-font","Sukhumvit Set",-apple-system, BlinkMacSystemFont,"HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+	font-family: var(--pmr-font);
 }
 .size-xs{
 	font-size: 8px;
@@ -1575,19 +1584,21 @@ figure.cover img{
 .
 .*/
 
-.btn {
+.btn ,
+a.btn {
 	color: #fff;
-	background-color: var(--ci1);
+	background-color: var(--btn-bg);
 	font-weight: bold;
 	line-height: 1em;
 	padding: .75em 1.5em;
 	display: inline-block;
 	border-radius: 5px;
-	color: pointer;
+	cursor: pointer;
 	border:0;
 }
-.btn:hover{
-	background: var(--ci2);
+.btn:hover,
+a.btn:hover{
+	background-color: var(--btn-bg-hover);
 	color: #fff;
 }
 
