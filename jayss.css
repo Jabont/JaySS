@@ -43,12 +43,10 @@ html{
 	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	box-sizing: border-box;
-	overflow-x: hidden;
 }
 body{
 	background-color: #fbfbfb;
 	width: 100%;
-	overflow-x: hidden;
 }
 body, button, input, select, optgroup, textarea{
 	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
