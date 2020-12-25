@@ -196,7 +196,46 @@ nav li{
 /*-------------------------------------------------------------------------
 Heading | Title
 -------------------------------------------------------------------------*/
-
+@font-face {
+	font-family: "IBM";
+	src: url('https://www.jabont.com/jayss/fonts/IBMPlexSansThai-Light.woff2') format('woff2');
+	font-weight: 200;
+}
+@font-face {
+	font-family: "IBM";
+	src: url('https://www.jabont.com/jayss/fonts/IBMPlexSansThai-Text.woff2') format('woff2');
+	font-weight: 500;
+}
+@font-face {
+	font-family: "IBM";
+	src: url('https://www.jabont.com/jayss/fonts/IBMPlexSansThai-SemiBold.woff2') format('woff2');
+	font-weight: 700;
+}
+@font-face {
+	font-family: "IBM";
+	src: url('https://www.jabont.com/jayss/fonts/IBMPlexSansThai-Bold.woff2') format('woff2');
+	font-weight: 900;
+}
+@font-face {
+	font-family: "IBM-loop";
+	src: url('https://www.jabont.com/jayss/fonts/IBMPlexSansThaiLooped-Light.woff2') format('woff2');
+	font-weight: 200;
+}
+@font-face {
+	font-family: "IBM-loop";
+	src: url('https://www.jabont.com/jayss/fonts/IBMPlexSansThaiLooped-Regular.woff2') format('woff2');
+	font-weight: 500;
+}
+@font-face {
+	font-family: "IBM-loop";
+	src: url('https://www.jabont.com/jayss/fonts/IBMPlexSansThaiLooped-SemiBold.woff2') format('woff2');
+	font-weight: 700;
+}
+@font-face {
+	font-family: "IBM-loop";
+	src: url('fonts/IBMPlexSansThaiLooped-Bold.woff2') format('woff2');
+	font-weight: 900;
+}
 .title{
 	font-size: 1em;
 	display: block;

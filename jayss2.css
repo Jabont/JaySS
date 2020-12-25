@@ -37,20 +37,42 @@ xxl	= 64px | 4.00rem
 .*/
 
 :root{
-	--ci1:#000;
-	--ci2:#666;
-	--ci3:#888;
-	--link:var(--ci1);
-	--link-hover:var(--ci2);
-	--btn-bg:var(--ci1);
-	--btn-bg-hover:var(--ci2);
-	--nav-link:var(--ci1);
-	--nav-hover:var(--ci2);
-	--bg-color:#fbfbfb;
-	--text-color:#333;
-	--box-shadow:0 0 0 1px rgba(0,0,0,.04), 0 2px 4px 0 rgba(0,0,0,.08);
-	--txt-font:-apple-system, BlinkMacSystemFont, sans-serif;
-	--pmr-font:"Sukhumvit Set",-apple-system, BlinkMacSystemFont,"HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	--ci1: #000;
+	--ci2: #666;
+	--ci3: #888;
+	--link: var(--ci1);
+	--link-hover: var(--ci2);
+	--btn-bg: var(--ci1);
+	--btn-bg-hover: var(--ci2);
+	--nav-link: var(--ci1);
+	--nav-hover: var(--ci2);
+	--bg-color: #fff;
+	--text-color: #333;
+	--box-shadow: 0 20px 25px -5px rgba(150,150,180,.1),0 10px 10px -5px rgba(150,150,180,.07);
+	--round: 5px;
+	--pmr-font: "Sukhumvit Set",-apple-system, BlinkMacSystemFont,"HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	--txt-font: var(--font-sans);
+	
+}
+:root{
+	--font-sans: -apple-system, BlinkMacSystemFont, sans-serif !important;
+	--font-anuphan: 'Anuphan',-apple-system, BlinkMacSystemFont, sans-serif !important;
+	--font-ibm: 'IBM',-apple-system, BlinkMacSystemFont, sans-serif !important;
+	--font-ibm-loop: 'IBM-loop',-apple-system, BlinkMacSystemFont, sans-serif !important;
+	--font-noto: 'Noto',-apple-system, BlinkMacSystemFont, sans-serif !important;
+	--font-gp: 'gp',-apple-system, BlinkMacSystemFont, sans-serif !important;
+	--font-anakotmai: 'Anakotmai',-apple-system, BlinkMacSystemFont, sans-serif !important;
+	--font-sarabun: 'Sarabun',-apple-system, BlinkMacSystemFont, sans-serif !important;
+	--font-maledpan: 'Maledpan',-apple-system, BlinkMacSystemFont, sans-serif !important;
+	--font-srinakharinwirot: 'Srinakharinwirot',-apple-system, BlinkMacSystemFont, sans-serif !important;
+	--font-pgvim: 'PGVIM',-apple-system, BlinkMacSystemFont, sans-serif !important;
+	--font-serithai: 'serithai',-apple-system, BlinkMacSystemFont, sans-serif !important;
+	--font-kmitl-go: 'KMITLGo',-apple-system, BlinkMacSystemFont, sans-serif !important;
+	--font-kmitl-2020: 'KMITL2020',-apple-system, BlinkMacSystemFont, sans-serif !important;
+	--font-chulalongkorn: 'Chulalongkorn',-apple-system, BlinkMacSystemFont, sans-serif !important;
+	--font-chulabhorn-text: 'ChulabhornText',-apple-system, BlinkMacSystemFont, sans-serif !important;
+	--font-chulabhorn-display: 'ChulabhornDisplay',-apple-system, BlinkMacSystemFont, sans-serif !important;
+	
 }
 
 /*.
@@ -76,6 +98,10 @@ body, button, input, select, optgroup, textarea{
 h1,h2,h3,h4,h5,h6{
 	margin: 0rem;
 	padding: 0rem;
+}
+
+:-webkit-any(article,aside,nav,section) h1 {
+    font-size: 2em;
 }
 article {
 	clear: both;
@@ -112,6 +138,13 @@ icon {
 	vertical-align: middle;
 	width: 1em;
 	overflow: hidden;
+}
+section{
+	position: relative;
+}
+anchor {
+    position: absolute;
+    top: 0px;
 }
 
 
@@ -217,6 +250,208 @@ nav li{
 Heading | Title
 -------------------------------------------------------------------------*/
 
+
+@font-face {
+	font-family: "Anuphan";
+	src: url('https://www.jabont.com/jayss/fonts/Anuphan/Anuphan-Light.woff2') format('woff2');
+	font-weight: 200;
+}
+@font-face {
+	font-family: "Anuphan";
+	src: url('https://www.jabont.com/jayss/fonts/Anuphan/Anuphan-Regular.woff2') format('woff2');
+	font-weight: 500;
+}
+@font-face {
+	font-family: "Anuphan";
+	src: url('https://www.jabont.com/jayss/fonts/Anuphan/Anuphan-SemiBold.woff2') format('woff2');
+	font-weight: 700;
+}
+@font-face {
+	font-family: "Anuphan";
+	src: url('https://www.jabont.com/jayss/fonts/Anuphan/Anuphan-Bold.woff2') format('woff2');
+	font-weight: 900;
+}
+
+@font-face {
+	font-family: "IBM";
+	src: url('https://www.jabont.com/jayss/fonts/IBMPlexSansThai-Light.woff2') format('woff2');
+	font-weight: 200;
+}
+@font-face {
+	font-family: "IBM";
+	src: url('https://www.jabont.com/jayss/fonts/IBMPlexSansThai-Text.woff2') format('woff2');
+	font-weight: 500;
+}
+@font-face {
+	font-family: "IBM";
+	src: url('https://www.jabont.com/jayss/fonts/IBMPlexSansThai-SemiBold.woff2') format('woff2');
+	font-weight: 700;
+}
+@font-face {
+	font-family: "IBM";
+	src: url('https://www.jabont.com/jayss/fonts/IBMPlexSansThai-Bold.woff2') format('woff2');
+	font-weight: 900;
+}
+@font-face {
+	font-family: "IBM-loop";
+	src: url('https://www.jabont.com/jayss/fonts/IBMPlexSansThaiLooped-Light.woff2') format('woff2');
+	font-weight: 200;
+}
+@font-face {
+	font-family: "IBM-loop";
+	src: url('https://www.jabont.com/jayss/fonts/IBMPlexSansThaiLooped-Regular.woff2') format('woff2');
+	font-weight: 500;
+}
+@font-face {
+	font-family: "IBM-loop";
+	src: url('https://www.jabont.com/jayss/fonts/IBMPlexSansThaiLooped-SemiBold.woff2') format('woff2');
+	font-weight: 700;
+}
+@font-face {
+	font-family: "IBM-loop";
+	src: url('https://www.jabont.com/jayss/fonts/IBMPlexSansThaiLooped-Bold.woff2') format('woff2');
+	font-weight: 900;
+}
+
+@font-face {
+	font-family: "Noto";
+	src: url('https://www.jabont.com/jayss/fonts/NotoSansThai/NotoSansThai-Regular.woff2') format('woff2'),
+	url('https://www.jabont.com/jayss/fonts/NotoSansThai/NotoSansThai-Regular.woff') format('woff');
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "Noto";
+	src: url('https://www.jabont.com/jayss/fonts/NotoSansThai/NotoSansThai-Bold.woff2') format('woff2'),
+	url('https://www.jabont.com/jayss/fonts/NotoSansThai/NotoSansThai-Bold.woff') format('woff');
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: "gp";
+	src: url('https://www.jabont.com/jayss/fonts/Graphik-Regular-Web.woff2') format('woff2');
+	font-weight: 500;
+}
+@font-face {
+	font-family: "gp";
+	src: url('https://www.jabont.com/jayss/fonts/Graphik-Medium-Web.woff2') format('woff2');
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: "Anakotmai";
+	src: url('https://www.jabont.com/jayss/fonts/anakotmai/anakotmai-light.woff2') format('woff2');
+	font-weight: 500;
+}
+@font-face {
+	font-family: "Anakotmai";
+	src: url('https://www.jabont.com/jayss/fonts/anakotmai/anakotmai-medium.woff2') format('woff2');
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: "Sarabun";
+	src: url('https://www.jabont.com/jayss/fonts/sarabun/sarabun.woff2') format('woff2');
+	font-weight: 500;
+}
+@font-face {
+	font-family: "Sarabun";
+	src: url('https://www.jabont.com/jayss/fonts/sarabun/sarabun-medium.woff2') format('woff2');
+	font-weight: 700;
+}
+@font-face {
+	font-family: "Sarabun";
+	src: url('https://www.jabont.com/jayss/fonts/sarabun/sarabun-bold.woff2') format('woff2');
+	font-weight: 900;
+}
+
+@font-face {
+	font-family: "Maledpan";
+	src: url('https://www.jabont.com/jayss/fonts/maledpan/maledpan.woff2') format('woff2');
+	font-weight: 500;
+}
+@font-face {
+	font-family: "Maledpan";
+	src: url('https://www.jabont.com/jayss/fonts/maledpan/maledpan-bold.woff2') format('woff2');
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: "Srinakharinwirot";
+	src: url('https://www.jabont.com/jayss/fonts/srinakharinwirot-regular.woff?v2') format('woff');
+	font-weight: 700;
+}
+@font-face {
+	font-family: "PGVIM";
+	src: url('https://www.jabont.com/jayss/fonts/pgvim-webfont.woff2') format('woff2');
+	font-weight: 500;
+}
+@font-face {
+	font-family: "Serithai";
+	src: url('https://www.jabont.com/jayss/fonts/Serithai-Regular.woff') format('woff');
+	font-weight: 500;
+}
+@font-face {
+	font-family: "KMITLGo";
+	src: url('https://www.jabont.com/jayss/fonts/kmitl/2-kmitlgo_light_ver_1.00-webfont.woff2') format('woff2');
+	font-weight: 300;
+}
+@font-face {
+	font-family: "KMITLGo";
+	src: url('https://www.jabont.com/jayss/fonts/kmitl/2-kmitlgo_regular_ver_1.00-webfont.woff2') format('woff2');
+	font-weight: 500;
+}
+@font-face {
+	font-family: "KMITLGo";
+	src: url('https://www.jabont.com/jayss/fonts/kmitl/2-kmitlgo_bold_ver_1.00-webfont.woff2') format('woff2');
+	font-weight: 700;
+}
+@font-face {
+	font-family: "KMITL2020";
+	src: url('https://www.jabont.com/jayss/fonts/kmitl/kmitl_2020_regular_ver_1.00-webfont.woff2?v2') format('woff2');
+	font-weight: 500;
+}
+@font-face {
+	font-family: "KMITL2020";
+	src: url('https://www.jabont.com/jayss/fonts/kmitl/kmitl_2020_bold_ver_1.00-webfont.woff2?v2') format('woff2');
+	font-weight: 700;
+}
+@font-face {
+	font-family: "Chulalongkorn";
+	src: url('https://www.jabont.com/jayss/fonts/CHULALONGKORN-Regular.woff2') format('woff2');
+	font-weight: 500;
+}
+@font-face {
+	font-family: "Chulalongkorn";
+	src: url('https://www.jabont.com/jayss/fonts/CHULALONGKORN-Bold.woff2') format('woff2');
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: "ChulabhornDisplay";
+	src: url('https://www.jabont.com/jayss/fonts/chulabhornlikitdisplay-medium-webfont.woff2') format('woff2');
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "ChulabhornText";
+	src: url('https://www.jabont.com/jayss/fonts/chulabhornlikittext-light-webfont.woff2') format('woff2');
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: "ChulabhornText";
+	src: url('https://www.jabont.com/jayss/fonts/chulabhornlikittext-regular-webfont.woff2') format('woff2');
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "ChulabhornText";
+	src: url('https://www.jabont.com/jayss/fonts/chulabhornlikittext-bold-webfont.woff2') format('woff2');
+	font-weight: 700;
+}
+
+
 .title{
 	font-size: 1em;
 	display: block;
@@ -257,13 +492,60 @@ Heading | Title
 	font-size: 0.6em !important;
 }
 .sans{
-	font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
+	font-family: var(--font-sans);
 }
-.ffont{
-	font-family: var(--pmr-font) !important;
+.anuphan{
+	font-family: var(--font-anuphan);
 }
+.ibm{
+	font-family: var(--font-ibm);
+}
+.ibm-loop{
+	font-family: var(--font-ibm-loop);
+}
+.noto{
+	font-family: var(--font-noto);
+}
+.gp{
+	font-family: var(--font-gp);
+}
+.anakotmai{
+	font-family: var(--font-anakotmai);
+}
+.sarabun{
+	font-family: var(--font-sarabun);
+}
+.maledpan{
+	font-family: var(--font-maledpan);
+}
+.srinakharinwirot{
+	font-family: var(--font-srinakharinwirot);
+}
+.pgvim{
+	font-family: var(--font-pgvim);
+}
+.serithai{
+	font-family: var(--font-serithai);
+}
+.kmitl-go{
+	font-family: var(--font-kmitl-go);
+}
+.kmitl-2020{
+	font-family: var(--font-kmitl-2020);
+}
+.chulalongkorn{
+	font-family: var(--font-chulalongkorn);
+}
+
+.chulabhorn-text{
+	font-family: var(--font-chulabhorn-text);
+}
+.chulabhorn-display{
+	font-family: var(--font-chulabhorn-display);
+}
+.ffont,
 .title.ffont,
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6{
 	font-family: var(--pmr-font);
 }
 .size-xs{
@@ -389,20 +671,14 @@ h1, h2, h3, h4 {
 	min-width: 320px;
 	display: block;
 	position: relative;
-	overflow: hidden;
-	overflow: visible;
 	margin: auto;
 	padding: 0 16px;
 }
 .wide{
-	display: block;
-	width: 100%;
-	height: auto;
+	width: 100% !important;
 	position: relative;
-	overflow: hidden;
-	overflow: visible;
-	margin: auto;
-	padding: 0;
+	/*padding: 0;*/
+	box-sizing: border-box;
 }
 .wide-pd{
 	display: block;
@@ -413,6 +689,7 @@ h1, h2, h3, h4 {
 	overflow: visible;
 	margin: auto;
 	padding: 0 16px;
+	box-sizing: border-box;
 }
 .fullscreen {
 	width: 100%;
@@ -435,6 +712,9 @@ h1, h2, h3, h4 {
 	overflow: hidden;
 	overflow: visible;
 	padding: 0;
+}
+.auto{
+	margin:auto;
 }
 /*.
 .
@@ -634,9 +914,9 @@ Grid | Inner Box
 	display: block;
 	width: 100%;
 	height: 100%;
-	overflow: hidden;
 	overflow: visible;
 	position: relative;
+	box-sizing: border-box;
 }
 .h-auto,.auto-vtc,.auto-h{
 	height: auto !important;
@@ -1149,6 +1429,352 @@ theboxes.has-padding-xxl-hzt > box{
 	padding-right: 4rem !important;
 }
 
+/*-------------------------------------------------------------------------
+Helper | margin
+-------------------------------------------------------------------------*/
+
+/*===== Deafult - 12px / .75rem =====*/
+.margin{
+	margin-top: .75rem !important;
+	margin-bottom: .75rem !important;
+	margin-left: .75rem !important;
+	margin-right: .75rem !important;
+}
+.margin-vtc{
+	margin-top: .75rem !important;
+	margin-bottom: .75rem !important;
+}
+.margin-hzt{
+	margin-left: .75rem !important;
+	margin-right: .75rem !important;
+}
+/*===== Size XS - 2px / .125rem =====*/
+.margin-xs{
+	margin-top: .125rem !important;
+	margin-bottom: .125rem !important;
+	margin-left: .125rem !important;
+	margin-right: .125rem !important;
+}
+.margin-xs-vtc{
+	margin-top: .125rem !important;
+	margin-bottom: .125rem !important;
+}
+.margin-xs-hzt{
+	margin-left: .125rem !important;
+	margin-right: .125rem !important;
+}
+
+/*===== Size VS - 4px / .250rem =====*/
+.margin-vs{
+	margin-top: .25rem !important;
+	margin-bottom: .25rem !important;
+	margin-left: .25rem !important;
+	margin-right: .25rem !important;
+}
+.margin-vs-vtc{
+	margin-top: .25rem !important;
+	margin-bottom: .25rem !important;
+}
+.margin-vs-hzt{
+	margin-left: .25rem !important;
+	margin-right: .25rem !important;
+}
+
+
+/*===== Size S - 6px / .375rem =====*/
+.margin-s{
+	margin-top: .375rem !important;
+	margin-bottom: .375rem !important;
+	margin-left: .375rem !important;
+	margin-right: .375rem !important;
+}
+.margin-s-vtc{
+	margin-top: .375rem !important;
+	margin-bottom: .375rem !important;
+}
+.margin-s-hzt{
+	margin-left: .375rem !important;
+	margin-right: .375rem !important;
+}
+
+
+/*===== Size M - 12px / .75rem =====*/
+.margin-m{
+	margin-top: .75rem !important;
+	margin-bottom: .75rem !important;
+	margin-left: .75rem !important;
+	margin-right: .75rem !important;
+}
+.margin-m-vtc{
+	margin-top: .75rem !important;
+	margin-bottom: .75rem !important;
+}
+.margin-m-hzt{
+	margin-left: .75rem !important;
+	margin-right: .75rem !important;
+}
+
+/*===== Size RM - 16px / 1rem =====*/
+.margin-rm{
+	margin-top: 1rem !important;
+	margin-bottom: 1rem !important;
+	margin-left: 1rem !important;
+	margin-right: 1rem !important;
+}
+.margin-rm-vtc{
+	margin-top: 1rem !important;
+	margin-bottom: 1rem !important;
+}
+.margin-rm-hzt{
+	margin-left: 1rem !important;
+	margin-right: 1rem !important;
+}
+
+
+/*===== Size L - 24px / 1.5rem =====*/
+.margin-l{
+	margin-top: 1.5rem !important;
+	margin-bottom: 1.5rem !important;
+	margin-left: 1.5rem !important;
+	margin-right: 1.5rem !important;
+}
+.margin-l-vtc{
+	margin-top: 1.5rem !important;
+	margin-bottom: 1.5rem !important;
+}
+.margin-l-hzt{
+	margin-left: 1.5rem !important;
+	margin-right: 1.5rem !important;
+}
+
+
+/*===== Size VL - 36px / 2.25rem =====*/
+.margin-vl{
+	margin-top: 2.25rem !important;
+	margin-bottom: 2.25rem !important;
+	margin-left: 2.25rem !important;
+	margin-right: 2.25rem !important;
+}
+.margin-vl-vtc{
+	margin-top: 2.25rem !important;
+	margin-bottom: 2.25rem !important;
+}
+.margin-vl-hzt{
+	margin-left: 2.25rem !important;
+	margin-right: 2.25rem !important;
+}
+
+
+/*===== Size XL - 48px / 3rem =====*/
+.margin-xl{
+	margin-top: 3rem !important;
+	margin-bottom: 3rem !important;
+	margin-left: 3rem !important;
+	margin-right: 3rem !important;
+}
+.margin-xl-vtc{
+	margin-top: 3rem !important;
+	margin-bottom: 3rem !important;
+}
+.margin-xl-hzt{
+	margin-left: 3rem !important;
+	margin-right: 3rem !important;
+}
+
+/*===== Size XXL - 64px / 4rem =====*/
+.margin-xxl{
+	margin-top: 4rem !important;
+	margin-bottom: 4rem !important;
+	margin-left: 4rem !important;
+	margin-right: 4rem !important;
+}
+.margin-xxl-vtc{
+	margin-top: 4rem !important;
+	margin-bottom: 4rem !important;
+}
+.margin-xxl-hzt{
+	margin-left: 4rem !important;
+	margin-right: 4rem !important;
+}
+
+.article-margin p:not(:last-child){
+	margin-bottom: 1em;
+}
+.article-margin h1:not(:last-child),
+.article-margin h2:not(:last-child),
+.article-margin h3:not(:last-child),
+.article-margin h4:not(:last-child),
+.article-margin h5:not(:last-child),
+.article-margin h6:not(:last-child){
+	margin-bottom: .8rem;
+}
+/*-- Mobile Version --*/
+@media (max-width: 768px) {
+	
+	/*===== Deafult - 12px / .75rem =====*/
+	.mob-margin{
+		margin-top: .75rem !important;
+		margin-bottom: .75rem !important;
+		margin-left: .75rem !important;
+		margin-right: .75rem !important;
+	}
+	.mob-margin-vtc{
+		margin-top: .75rem !important;
+		margin-bottom: .75rem !important;
+	}
+	.mob-margin-hzt{
+		margin-left: .75rem !important;
+		margin-right: .75rem !important;
+	}
+	/*===== Size XS - 2px / .125rem =====*/
+	.mob-margin-xs{
+		margin-top: .125rem !important;
+		margin-bottom: .125rem !important;
+		margin-left: .125rem !important;
+		margin-right: .125rem !important;
+	}
+	.mob-margin-xs-vtc{
+		margin-top: .125rem !important;
+		margin-bottom: .125rem !important;
+	}
+	.mob-margin-xs-hzt{
+		margin-left: .125rem !important;
+		margin-right: .125rem !important;
+	}
+
+	/*===== Size VS - 4px / .250rem =====*/
+	.mob-margin-vs{
+		margin-top: .25rem !important;
+		margin-bottom: .25rem !important;
+		margin-left: .25rem !important;
+		margin-right: .25rem !important;
+	}
+	.mob-margin-vs-vtc{
+		margin-top: .25rem !important;
+		margin-bottom: .25rem !important;
+	}
+	.mob-margin-vs-hzt{
+		margin-left: .25rem !important;
+		margin-right: .25rem !important;
+	}
+
+
+	/*===== Size S - 6px / .375rem =====*/
+	.mob-margin-s{
+		margin-top: .375rem !important;
+		margin-bottom: .375rem !important;
+		margin-left: .375rem !important;
+		margin-right: .375rem !important;
+	}
+	.mob-margin-s-vtc{
+		margin-top: .375rem !important;
+		margin-bottom: .375rem !important;
+	}
+	.mob-margin-s-hzt{
+		margin-left: .375rem !important;
+		margin-right: .375rem !important;
+	}
+
+
+	/*===== Size M - 12px / .75rem =====*/
+	.mob-margin-m{
+		margin-top: .75rem !important;
+		margin-bottom: .75rem !important;
+		margin-left: .75rem !important;
+		margin-right: .75rem !important;
+	}
+	.mob-margin-m-vtc{
+		margin-top: .75rem !important;
+		margin-bottom: .75rem !important;
+	}
+	.mob-margin-m-hzt{
+		margin-left: .75rem !important;
+		margin-right: .75rem !important;
+	}
+
+	/*===== Size RM - 16px / 1rem =====*/
+	.mob-margin-rm{
+		margin-top: 1rem !important;
+		margin-bottom: 1rem !important;
+		margin-left: 1rem !important;
+		margin-right: 1rem !important;
+	}
+	.mob-margin-rm-vtc{
+		margin-top: 1rem !important;
+		margin-bottom: 1rem !important;
+	}
+	.mob-margin-rm-hzt{
+		margin-left: 1rem !important;
+		margin-right: 1rem !important;
+	}
+
+
+	/*===== Size L - 24px / 1.5rem =====*/
+	.mob-margin-l{
+		margin-top: 1.5rem !important;
+		margin-bottom: 1.5rem !important;
+		margin-left: 1.5rem !important;
+		margin-right: 1.5rem !important;
+	}
+	.mob-margin-l-vtc{
+		margin-top: 1.5rem !important;
+		margin-bottom: 1.5rem !important;
+	}
+	.mob-margin-l-hzt{
+		margin-left: 1.5rem !important;
+		margin-right: 1.5rem !important;
+	}
+
+
+	/*===== Size VL - 36px / 2.25rem =====*/
+	.mob-margin-vl{
+		margin-top: 2.25rem !important;
+		margin-bottom: 2.25rem !important;
+		margin-left: 2.25rem !important;
+		margin-right: 2.25rem !important;
+	}
+	.mob-margin-vl-vtc{
+		margin-top: 2.25rem !important;
+		margin-bottom: 2.25rem !important;
+	}
+	.mob-margin-vl-hzt{
+		margin-left: 2.25rem !important;
+		margin-right: 2.25rem !important;
+	}
+
+
+	/*===== Size XL - 48px / 3rem =====*/
+	.mob-margin-xl{
+		margin-top: 3rem !important;
+		margin-bottom: 3rem !important;
+		margin-left: 3rem !important;
+		margin-right: 3rem !important;
+	}
+	.mob-margin-xl-vtc{
+		margin-top: 3rem !important;
+		margin-bottom: 3rem !important;
+	}
+	.mob-margin-xl-hzt{
+		margin-left: 3rem !important;
+		margin-right: 3rem !important;
+	}
+
+	/*===== Size XXL - 64px / 4rem =====*/
+	.mob-margin-xxl{
+		margin-top: 4rem !important;
+		margin-bottom: 4rem !important;
+		margin-left: 4rem !important;
+		margin-right: 4rem !important;
+	}
+	.mob-margin-xxl-vtc{
+		margin-top: 4rem !important;
+		margin-bottom: 4rem !important;
+	}
+	.mob-margin-xxl-hzt{
+		margin-left: 4rem !important;
+		margin-right: 4rem !important;
+	}
+}
 
 /*-------------------------------------------------------------------------
 Helper | No!
@@ -1368,40 +1994,11 @@ img.t-center,
 }
 
 /*-------------------------------------------------------------------------
-Helper | Typo | Text Transform
--------------------------------------------------------------------------*/
-.upper{
-	text-transform: uppercase;
-}
-.lower{
-	text-transform: lowercase;
-}
-.capital{
-	text-transform: capitalize;
-}
-
-/*-------------------------------------------------------------------------
-Helper | Typo | Display
--------------------------------------------------------------------------*/
-.inline-block{
-	display: inline-block;
-}
-.block{
-	display: block;
-}
-.inline{
-	display: inline;
-}
-.flex{
-	display: flex;
-}
-
-/*-------------------------------------------------------------------------
 Helper | Radius
 -------------------------------------------------------------------------*/
 .round{
 	/*border-radius: 5px !important;*/
-	border-radius: 5px;
+	border-radius: var(--round);
 	overflow: hidden;
 }
 .circle{
@@ -1410,7 +2007,7 @@ Helper | Radius
 	overflow: hidden;
 }
 .no-round{
-	border-radius: 0px;
+	border-radius: 0px !important;
 }
 
 /*-------------------------------------------------------------------------
@@ -1536,23 +2133,66 @@ figure.cover img{
 	position: absolute;
 
 }
+.blank[ratio="10:2"],.blank.-r10-2{
+	padding-top: 20.00%;
+}
+.blank[ratio="10:4"],.blank.-r10-4{
+	padding-top: 40.00%;
+}
+.blank[ratio="2:1"],.blank.-r2-1{
+	padding-top: 50.00%;
+}
+.blank[ratio="facebook"],.blank[ratio="fb"],.blank.-rfacebook{
+	padding-top: 52.33%;
+}
+.blank[ratio="16:9"],.blank.-r16-9{
+	padding-top: 56.25%;
+}
+.blank[ratio="golden"],.blank[ratio="golden"],.blank.-rgolden{
+	padding-top: 61.80%;
+}
+.blank[ratio="16:10"],.blank.-r16-10{
+	padding-top: 62.50%;
+}
+.blank[ratio="3:2"],.blank.-r3-2{
+	padding-top: 66.66%;
+}
+.blank[ratio="4:3"],.blank.-r4-3{
+	padding-top: 75.00%;
+}
+.blank[ratio="5:4"],.blank.-r5-4{
+	padding-top: 80.00%;
+}
 .blank.-square,.blank[ratio="1:1"]{
 	padding-top: 100%;
 }
-.blank[ratio="2:1"],.blank.-r2-1{
-	padding-top: 50%;
+
+.blank[ratio="2:10"],.blank.-r2-10{
+	padding-top: 500.00%;
 }
-.blank[ratio="16:9"],.blank.-r16-9{
-	padding-top: 56%;
+.blank[ratio="4:10"],.blank.-r4-10{
+	padding-top: 250.00%;
 }
-.blank[ratio="16:10"],.blank.-r16-10{
-	padding-top: 63%;
+.blank[ratio="1:2"],.blank.-r1-2{
+	padding-top: 200.00%;
 }
-.blank[ratio="4:3"],.blank.-r4-3{
-	padding-top: 75%;
+.blank[ratio="9:16"],.blank.-r9-16{
+	padding-top: 177.777778%;
 }
-.blank[ratio="facebook"],.blank.-rfacebook{
-	padding-top: 53%;
+.blank[ratio="golden-vtc"],.blank[ratio="golden-vtc"],.blank.-rgolden{
+	padding-top: 161.8%;
+}
+.blank[ratio="10:16"],.blank.-r10-16{
+	padding-top: 160.00%;
+}
+.blank[ratio="2:3"],.blank.-r2-3{
+	padding-top: 150.00%;
+}
+.blank[ratio="3:4"],.blank.-r3-4{
+	padding-top: 133.33%;
+}
+.blank[ratio="4:5"],.blank.-r4-5{
+	padding-top: 125.00%;
 }
 
 /*-- Mobile Version --*/
@@ -1583,7 +2223,9 @@ figure.cover img{
 =========================================================================
 .
 .*/
-
+.pointer{
+	cursor: pointer;
+}
 .btn ,
 a.btn {
 	color: #fff;
@@ -1606,14 +2248,29 @@ a.btn:hover{
 	background-color: transparent; 
 	border:1px solid;
 }
-input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"] {
-	line-height: 2.4em;
-	padding: 0 1em;
-	margin: 0;
-	/*border-radius: 0;*/
-	/*border: 1px solid;*/
+input{
 	box-sizing: border-box;
 }
+input:focus{
+	outline:none;
+	box-shadow: 0px 0px 4px #e2e8f066 inset;
+}
+
+.input,input {
+	display: block;
+	padding: 0 .8em;
+	line-height: 2.4em;
+	background-color: white;
+	border-radius: 4px;
+	border: 1px solid #e2e8f0;
+	font-size: 1rem;
+	width: 16em;
+	max-width: 100%;
+}
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"] {
+	width: 22em;	
+}
+
 button, input[type="button"], input[type="reset"], input[type="submit"] {
 	font-size: 1em;
 	line-height: 2.4em;
@@ -1624,6 +2281,70 @@ select{
 	vertical-align: bottom;
 }
 
+/*-------------------------------------------------------------------------
+Helper | Typo | Text Transform
+-------------------------------------------------------------------------*/
+.upper{
+	text-transform: uppercase;
+}
+.lower{
+	text-transform: lowercase;
+}
+.capital{
+	text-transform: capitalize;
+}
+
+/*-------------------------------------------------------------------------
+Helper | Typo | Display
+-------------------------------------------------------------------------*/
+.inline-block{
+	display: inline-block;
+}
+.block{
+	display: block;
+}
+.inline{
+	display: inline;
+}
+.flex{
+	display: flex;
+}
+.hide{
+	display: none;
+}
+/*-- Mobile Version --*/
+@media (max-width: 768px) {
+	
+	/*-------------------------------------------------------------------------
+	Helper | Typo | Text Transform
+	-------------------------------------------------------------------------*/
+	.mob-upper{
+		text-transform: uppercase;
+	}
+	.mob-lower{
+		text-transform: lowercase;
+	}
+	.mob-capital{
+		text-transform: capitalize;
+	}
+
+	/*-------------------------------------------------------------------------
+	Helper | Typo | Display
+	-------------------------------------------------------------------------*/
+	.mob-inline-block{
+		display: inline-block;
+	}
+	.mob-block{
+		display: block;
+	}
+	.mob-inline{
+		display: inline;
+	}
+	.mob-flex{
+		display: flex;
+	}
+
+}
 /*.
 .
 =========================================================================
@@ -1755,11 +2476,8 @@ Responsive | Hide and Show
 		height: auto;
 	}
 	.mob-wide{
-		margin: 0;
-		padding: 0;
-		width: 100%;
-		min-height: unset;
-		height: auto;
+		width: 100% !important;
+		box-sizing: border-box;
 	}
 	.mob-full-h{
 		height: 100%;
@@ -2037,21 +2755,6 @@ Responsive | Hide and Show
 	.mob-v-middle-flex .to-center{
 		width:100%;
 		text-align: center;
-	}
-	/*-------------------------------------------------------------------------
-	Helper | Typo | Display
-	-------------------------------------------------------------------------*/
-	.mob-inline-block{
-		display: inline-block;
-	}
-	.mob-block{
-		display: block;
-	}
-	.mob-inline{
-		display: inline;
-	}
-	.mob-flex{
-		display: flex;
 	}
 
 	/*-------------------------------------------------------------------------

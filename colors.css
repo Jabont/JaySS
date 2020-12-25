@@ -1,5 +1,30 @@
 /*https://www.materialui.co/colors*/
 
+.cl-ci1,
+.cl-ci1 svg{
+	color: var(--ci1);
+	fill: var(--ci1);
+}
+.cl-ci2,
+.cl-ci2 svg{
+	color: var(--ci2);
+	fill: var(--ci2);
+}
+.cl-ci3,
+.cl-ci3 svg{
+	color: var(--ci3);
+	fill: var(--ci3);
+}
+.cl-ci4,
+.cl-ci4 svg{
+	color: var(--ci4);
+	fill: var(--ci4);
+}
+.cl-ci5,
+.cl-ci5 svg{
+	color: var(--ci5);
+	fill: var(--ci5);
+}
 .cl-white,
 .cl-white svg{
 	color: #fff !important;
@@ -9,6 +34,11 @@
 .cl-smoke svg{
 	color: #fafafa !important;
 	fill: #fafafa !important;
+}
+.cl-cloud,
+.cl-cloud svg{
+	color: #fbfcfd !important;
+	fill: #fbfcfd !important;
 }
 .cl-a,
 .cl-a svg{
@@ -1492,6 +1522,31 @@
 -------------------------------- Hover --------------------------------
 
 =====================================================================*/
+.hover-cl-ci1:hover,
+.hover-cl-ci1 svg:hover{
+	color: var(--ci1);
+	fill: var(--ci1);
+}
+.hover-cl-ci2:hover,
+.hover-cl-ci2 svg:hover{
+	color: var(--ci2);
+	fill: var(--ci2);
+}
+.hover-cl-ci3:hover,
+.hover-cl-ci3 svg:hover{
+	color: var(--ci3);
+	fill: var(--ci3);
+}
+.hover-cl-ci4:hover,
+.hover-cl-ci4 svg:hover{
+	color: var(--ci4);
+	fill: var(--ci4);
+}
+.hover-cl-ci5:hover,
+.hover-cl-ci5 svg:hover{
+	color: var(--ci5);
+	fill: var(--ci5);
+}
 
 .hover-cl-white:hover,
 .hover-cl-white svg:hover{
@@ -1502,6 +1557,11 @@
 .hover-cl-smoke svg:hover{
 	color: #fafafa !important;
 	fill: #fafafa !important;
+}
+.hover-cl-cloud:hover,
+.hover-cl-cloud svg:hover{
+	color: #fbfcfd !important;
+	fill: #fbfcfd !important;
 }
 .hover-cl-a:hover,
 .hover-cl-a svg:hover{

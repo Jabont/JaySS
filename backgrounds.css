@@ -1,6 +1,21 @@
 /*https://www.materialui.co/colors*/
+.bg-ci1{
+	background-color: var(--ci1);
+}
+.bg-ci2{
+	background-color: var(--ci2);
+}
+.bg-ci3{
+	background-color: var(--ci3);
+}
+.bg-ci4{
+	background-color: var(--ci4);
+}
+.bg-ci5{
+	background-color: var(--ci5);
+}
 
-.bg-0{
+.bg-0,.no-bg{
 	background-color: transparent !important;
 }
 .bg-white{
@@ -8,6 +23,9 @@
 }
 .bg-smoke{
 	background-color: #fafafa !important;
+}
+.bg-cloud{
+	background-color: #fbfcfd !important;
 }
 .bg-a{
 	background-color: #aaa !important;
@@ -934,13 +952,31 @@
 =====================================================================*/
 
 /*https://www.materialui.co/colors*/
-
+.hover-bg-ci1:hover{
+	background-color: var(--ci1);
+}
+.hover-bg-ci2:hover{
+	background-color: var(--ci2);
+}
+.hover-bg-ci3:hover{
+	background-color: var(--ci3);
+}
+.hover-bg-ci4:hover{
+	background-color: var(--ci4);
+}
+.hover-bg-ci5:hover{
+	background-color: var(--ci5);
+}
 .hover-bg-white:hover{
 	background-color: #fff !important;
 }
 .hover-bg-smoke:hover{
 	background-color: #fafafa !important;
 }
+.hover-bg-cloud:hover{
+	background-color: #fbfcfd !important;
+}
+
 .hover-bg-a:hover{
 	background-color: #aaa !important;
 }
